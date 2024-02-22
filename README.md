@@ -1,1 +1,14 @@
-# Deteccao_de_Intrusao
+# Detecção de Intrusão Hierárquica Multiestágio
+
+Projeto da cadeira de Detecção de Intrusão do curso de [Engenharia da Computação (EC)](https://portal.cin.ufpe.br/graduacao/#engenharia-da-computacao) do [Centro de Informática (CIN)](https://portal.cin.ufpe.br/) da [Universidade Federal de Pernambuco (UFPE)](https://www.ufpe.br/), cadeira cursada por mim de 2023 a 2024. 
+
+O professor da cadeira disponibilizou alguns artigos relacionados ao uso de inteligência artificial para segurança ou à segurança para sistemas baseados em inteligência artificial, os alunos foram divididos em grupos e cada grupo tinha que escolher um artigo ou propor ao professor a escolha de um artigo de fora dos disponibilizados pelo professor. Após a escolha do artigo, o grupo tinha que apresentar um seminário sobre o artigo, reproduzir o experimento do artigo no mesmo conjunto de dados e também em outro conjunto de dados, além disso, o grupo também poderia tentar realizar melhorias no sistema do artigo escolhido. Para mais informações sobre as regras e requisitos, verifique o conteúdo do arquivo `Especificação_do_seminário_e_do_projeto.pdf`.
+
+## Organização de Diretórios/Arquivos
+
+## Links
+
+## Autores
+
+| [<img src="https://github.com/luiz-linkezio.png" width=115><br><sub>Luiz Henrique</sub><br>](https://github.com/luiz-linkezio) <sub>Desenvolvedor</sub><br> <sub>[Linkedin](https://www.linkedin.com/in/lhbas/)</sub> | [<img src="https://github.com/Raafm.png" width=115><br><sub>Rodrigo Abreu</sub><br>](https://github.com/Raafm) <sub>Desenvolvedor</sub><br> <sub>[Linkedin](https://www.linkedin.com/in/rodrigo-abreu-/)</sub> | [<img src="https://github.com/Rayhene.png" width=115><br><sub>Rayhene Ranúzia</sub><br>](https://github.com/Rayhene) <sub>Desenvolvedor</sub><br> <sub>[Linkedin](https://www.linkedin.com/in/rayhene/)</sub> |
+| :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
