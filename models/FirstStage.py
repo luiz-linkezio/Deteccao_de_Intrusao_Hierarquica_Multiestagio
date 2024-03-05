@@ -3,7 +3,7 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report
 from sklearn.datasets import load_digits
-from best_threshold import binary_distribution_threshold_search
+from utils.best_threshold import binary_distribution_threshold_search
 
 class FirstStage:
     def __init__(self,anomaly_detector,threshold_b= None, ys= None):
