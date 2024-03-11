@@ -12,3 +12,4 @@
 /data/validation_stage_1_3.csv
 /data/test_dataset.csv
 env
+__pycache__
