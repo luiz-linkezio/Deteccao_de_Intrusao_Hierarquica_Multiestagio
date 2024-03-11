@@ -4,7 +4,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report
 from sklearn.datasets import load_digits
 from utils.best_threshold import binary_distribution_threshold_search
-
+import time
 class FirstStage:
     def __init__(self,anomaly_detector,threshold_b= None, ys= None):
         """anomaly detector must be a pretrained binary classifier
@@ -18,6 +18,8 @@ class FirstStage:
             self.tb = binary_distribution_threshold_search(ys[0],ys[1])
         else:
             ValueError("ys and threshold_b cannot be both None")
+
+        self._execution_time_list1 = []
 
     # PRECISA IMPLEMENTAR
     # probabilidade de ser uma anomalia
@@ -37,10 +39,18 @@ class FirstStage:
             self.tb = t
         return t
 
+    def get_execution_time_list1(self):
+        return self._execution_time_list1
+
+
     def detectar_anomalia(self, X, return_probs= True):
+        start = time.perf_counter()
+        
         # prob_anomalia == lambda_b no esquema original
         prob_anomalia = self.detect_anomaly_proba(X)
         possivelmente_anomalia_indices = np.where(prob_anomalia >= self.tb)[0]
+        finish = time.perf_counter()
+        self.execution_time_list1.append(finish - start)
 
         if return_probs:
             return possivelmente_anomalia_indices, prob_anomalia

@@ -7,7 +7,7 @@ from utils.FirstStage import FirstStage
 from utils.SecondStage import SecondStage
 from utils.Extension import Extension
 from sklearn.model_selection import train_test_split
-
+import time
 class Sistema_Hierarquico_Base(FirstStage, SecondStage, Extension):
     def __init__(self, anomaly_detector, classifier, n_anomalias, threshold_b, threshold_m, threshold_u):
         assert threshold_b <  threshold_u # not sure why
@@ -18,13 +18,27 @@ class Sistema_Hierarquico_Base(FirstStage, SecondStage, Extension):
 
         self.n_anomalias = n_anomalias
         self._benign_label = n_anomalias+1
+        self._execution_time_list = []
 
     def get_labels(self, each_anomaly= False):
         print("0 means zero-day, the system do not recognize as benign or any known malign")
         print(f"numbers 1 to {self.n_anomalias} are each one type of anomaly")
         print(f"{self._benign_label} means benign")
 
+    def get_execution_time_list(self):
+        return self._execution_time_list
+
+    def get_execution_time_lists(self):
+        """retorna 3 listas com o tempo das execuções de cada um dos 3 estagios
+        e uma quarta lista com o tempo do sistema"""
+        l1 = np.array(super().get_execution_time_list1())
+        l2 = np.array(super().get_execution_time_list2())
+        l3 = np.array(super().get_execution_time_list3())
+        l  = np.array(self.get_execution_time_list())
+        return  l1, l2, l3, l
+
     def predict(self, X):
+        start = time.perf_counter()
         # todos sao classificados como benign por default
         prediction = np.zeros(len(X),dtype= int) + self._benign_label
 
@@ -46,7 +60,8 @@ class Sistema_Hierarquico_Base(FirstStage, SecondStage, Extension):
         # 0 representa zero-day
         prediction[possivelmente_anomalia_indices] = atk
         prediction[possibly_zero_day_indices] = np.where(is_not_zero_day, self._benign_label, self._zero_day_label)
-
+        finish = time.perf_counter()
+        self._execution_time_list.append(finish -start)
         return prediction
 
 if __name__ == '__main__':

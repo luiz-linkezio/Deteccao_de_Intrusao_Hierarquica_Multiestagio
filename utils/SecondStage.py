@@ -2,13 +2,14 @@ import numpy as np
 from sklearn.neural_network import MLPClassifier
 from sklearn.metrics import classification_report
 from sklearn.datasets import load_digits
-
+import time
 class SecondStage:
     def __init__(self,classifier,n_anomalias,threshold_m):
         self.classifier = classifier
         self.tm = threshold_m
         self.n_anomalias = n_anomalias
         self._unknown_label = -1
+        self.execution_time_list2 = []
 
 
     def set_threshold_m(self, threshold_m):
@@ -28,11 +29,19 @@ class SecondStage:
         return classes,probs
 
 
+    def get_execution_time_list2(self):
+        return self._execution_time_list2
+
     def predict_attack(self, X,  return_probs= False):
+
+        start = time.perf_counter()
         atk, Patk = self.get_class_and_proba(X)
         # se nenhum ataque tiver a minima probabilidade:
         # classifique como desconhecido
         atk = np.where(Patk > self.tm, atk, self._unknown_label)
+        finish = time.perf_counter()
+
+        self.execution_time_list2.append(finish-start)
 
         if return_probs:
             return atk, Patk
