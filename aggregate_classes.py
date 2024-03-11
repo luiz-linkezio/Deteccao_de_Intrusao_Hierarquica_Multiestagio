@@ -16,4 +16,5 @@ taxonomia_ataque_dict = {
     'Heartbleed'                : 'Unkown', 
     } 
 
-high_level_class = lambda ataque_especifico : taxonomia_ataque_dict[ataque_especifico]
+def high_level_class(ataque_especifico): 
+    return taxonomia_ataque_dict[ataque_especifico]

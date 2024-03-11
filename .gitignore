@@ -13,3 +13,5 @@
 /data/test_dataset.csv
 env
 __pycache__
+aggregate_classes.py
+aggregate_classes.ipynb

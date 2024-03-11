@@ -3,9 +3,9 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.neural_network import MLPClassifier
 from sklearn.metrics import classification_report
 from sklearn.datasets import load_digits
-from FirstStage import FirstStage
-from SecondStage import SecondStage
-from Extension import Extension
+from utils.FirstStage import FirstStage
+from utils.SecondStage import SecondStage
+from utils.Extension import Extension
 from sklearn.model_selection import train_test_split
 
 class Sistema_Hierarquico_Base(FirstStage, SecondStage, Extension):
@@ -19,7 +19,7 @@ class Sistema_Hierarquico_Base(FirstStage, SecondStage, Extension):
         self.n_anomalias = n_anomalias
         self._benign_label = n_anomalias+1
 
-    def get_labels(self):
+    def get_labels(self, each_anomaly= False):
         print("0 means zero-day, the system do not recognize as benign or any known malign")
         print(f"numbers 1 to {self.n_anomalias} are each one type of anomaly")
         print(f"{self._benign_label} means benign")
