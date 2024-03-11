@@ -18,9 +18,12 @@ class Sistema_Hierarquico_Base(FirstStage, SecondStage, Extension):
 
         self.n_anomalias = n_anomalias
         self._benign_label = n_anomalias+1
-        self._execution_time_list = []
+        self._execution_time_list1 = []
+        self._execution_time_list2 = []
+        self._execution_time_list3 = []
+        self._execution_time_list  = []
 
-    def get_labels(self, each_anomaly= False):
+    def get_labels(self):
         print("0 means zero-day, the system do not recognize as benign or any known malign")
         print(f"numbers 1 to {self.n_anomalias} are each one type of anomaly")
         print(f"{self._benign_label} means benign")
@@ -31,10 +34,10 @@ class Sistema_Hierarquico_Base(FirstStage, SecondStage, Extension):
     def get_execution_time_lists(self):
         """retorna 3 listas com o tempo das execuções de cada um dos 3 estagios
         e uma quarta lista com o tempo do sistema"""
-        l1 = np.array(super().get_execution_time_list1())
-        l2 = np.array(super().get_execution_time_list2())
-        l3 = np.array(super().get_execution_time_list3())
-        l  = np.array(self.get_execution_time_list())
+        l1 = np.array(self._execution_time_list1)
+        l2 = np.array(self._execution_time_list2)
+        l3 = np.array(self._execution_time_list3)
+        l  = np.array(self._execution_time_list)
         return  l1, l2, l3, l
 
     def predict(self, X):
@@ -43,17 +46,26 @@ class Sistema_Hierarquico_Base(FirstStage, SecondStage, Extension):
         prediction = np.zeros(len(X),dtype= int) + self._benign_label
 
         # primeiro estagio: detector de anomalias
+        start1 = time.perf_counter()
         possivelmente_anomalia_indices, prob_anomalia = self.detectar_anomalia(X)
+        finish1 = time.perf_counter()
+        self._execution_time_list1.append(finish1-start1)
 
         # segundo estagio: classificador de ataque
         # atk e um vetor com os labels (de 1 ate n_anomalias) e com alguns unkown (-1)
+        start2 = time.perf_counter()
         atk = self.predict_attack(X[possivelmente_anomalia_indices])
+        finish2 = time.perf_counter()
+        self._execution_time_list2.append(finish2-start2)
 
         possibly_zero_day_indices = possivelmente_anomalia_indices[atk == self._unknown_label]
 
         # inferimos o zero day
         # nao precisamos definir os outros elementos como benignos, pois isso foi feito por default no inicio desta funcao
+        start3 = time.perf_counter()
         is_not_zero_day = self.predict_benign_zero_day(prob_anomalia[possibly_zero_day_indices])
+        finish3 = time.perf_counter()
+        self._execution_time_list3.append(finish3-start3)
 
         # n_classes+1 representa zero-day,
         # [1,2,..., n_anomalias] representam anomalias
@@ -61,7 +73,7 @@ class Sistema_Hierarquico_Base(FirstStage, SecondStage, Extension):
         prediction[possivelmente_anomalia_indices] = atk
         prediction[possibly_zero_day_indices] = np.where(is_not_zero_day, self._benign_label, self._zero_day_label)
         finish = time.perf_counter()
-        self._execution_time_list.append(finish -start)
+        self._execution_time_list.append(finish - start)
         return prediction
 
 if __name__ == '__main__':
