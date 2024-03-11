@@ -1,16 +1,4 @@
-/data/CIC_IDS_2017.zip
-/data/MachineLearningCVE
-/data/cic_ids_2017.parquet
-/data/cic-collection.parquet
-/data/cse_cic_ids_2018.parquet
-/data/infiltration_2018.csv
-/data/test_full_model.csv
-/data/train_stage_1_3_OCSVM.csv
-/data/train_stage_1_3_RF.csv
-/data/train_stage_2.csv
-/data/validation_stage_2.csv
-/data/validation_stage_1_3.csv
-/data/test_dataset.csv
+data
 env
 __pycache__
 aggregate_classes.py
