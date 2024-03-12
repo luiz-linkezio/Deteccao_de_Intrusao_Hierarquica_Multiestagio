@@ -1,0 +1,32 @@
+threshold = 0.03663673
+
+treino
+              precision    recall  f1-score   support
+
+         0.0       1.00      0.57      0.73     10000
+         1.0       0.00      0.00      0.00         0
+
+    accuracy                           0.57     10000
+   macro avg       0.50      0.28      0.36     10000
+weighted avg       1.00      0.57      0.73     10000
+______________________________________________________________
+validação (parte do de validação)
+              precision    recall  f1-score   support
+
+           0       1.00      0.57      0.72     97072
+           1       0.10      0.95      0.19      5156
+
+    accuracy                           0.59    102228
+   macro avg       0.55      0.76      0.46    102228
+weighted avg       0.95      0.59      0.70    102228
+
+test (outra parte do de validacao)
+______________________________________________________________
+              precision    recall  f1-score   support
+
+           0       1.00      0.57      0.73     32413
+           1       0.10      0.95      0.19      1664
+
+    accuracy                           0.59     34077
+   macro avg       0.55      0.76      0.46     34077
+weighted avg       0.95      0.59      0.70     34077
