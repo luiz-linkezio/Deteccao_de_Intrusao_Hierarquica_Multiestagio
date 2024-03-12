@@ -2,3 +2,5 @@ env
 __pycache__
 aggregate_classes.py
 aggregate_classes.ipynb
+data/cic_ids_2017.parquet
+data/cic_ids_2018.parquet
