@@ -22,7 +22,7 @@ O diretório:
  - `SistemaHierarquico(reprodução).ipynb` é a reprodução do sistema escolhido pela nossa equipe.
  - `SistemaHierarquico(melhorado).ipynb` é a melhora no sistema do artigo escolhido pela nossa equipe.
 
-Para obter o arquivo do conjunto de dados `cic_ids_2017`, pelo fato do arquivo ser muito grande, será necessário o uso do Git Large File Storage (LFS), que é uma extensão do Git que facilita o gerenciamento de arquivos grandes em repositórios Git, ele permite armazenar arquivos grandes fora do repositório principal do Git, reduzindo assim o tamanho do repositório e melhorando a eficiência do versionamento. Para utilizar esta ferramenta, siga os seguintes passos:
+Para obter o arquivo do conjunto de dados `cic_ids_2017`, pelo fato do arquivo ser muito grande, será necessário o uso do [Git Large File Storage (LFS)](https://git-lfs.com), que é uma extensão do Git que facilita o gerenciamento de arquivos grandes em repositórios Git, ele permite armazenar arquivos grandes fora do repositório principal do Git, reduzindo assim o tamanho do repositório e melhorando a eficiência do versionamento. Para utilizar esta ferramenta, siga os seguintes passos:
 - Baixe e instale o Git LFS através deste link: https://git-lfs.com
 - Clone o repositório com o comando: `git clone git@github.com:luiz-linkezio/Deteccao_de_Intrusao_Hierarquica_Multiestagio.git`
 - Use o comando: `git lfs pull`
@@ -46,6 +46,8 @@ Nossa equipe conseguiu uma melhora considerável no tempo de execução do siste
 Repositório Base: https://gitlab.ilabt.imec.be/mverkerk/multi-stage-hierarchical-ids
 
 Artigo escolhido: https://ieeexplore.ieee.org/document/10077796
+
+Git Large File Storage (LFS): https://git-lfs.com
 
 Python: https://www.python.org
 
