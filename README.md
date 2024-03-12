@@ -31,7 +31,7 @@ Para obter o arquivo do conjunto de dados `cic_ids_2017`, pelo fato do arquivo s
 
 Nossa equipe conseguiu uma melhora considerável no tempo de execução do sistema hierárquico, mantendo os resultados bem similares aos resultados do artigo original:
 
-### Resultado do artigo original:
+### Resultado do [artigo original](https://ieeexplore.ieee.org/document/10077796):
 ![Results_Original_Pred](https://github.com/luiz-linkezio/Deteccao_de_Intrusao_Hierarquica_Multiestagio/assets/125787137/4c17f40c-60aa-4cb0-a567-38e5e62f49ea)
 ![Results_Original_Time](https://github.com/luiz-linkezio/Deteccao_de_Intrusao_Hierarquica_Multiestagio/assets/125787137/98dcf131-1e44-4ab3-8472-c1be621f8639)
 
