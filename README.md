@@ -7,10 +7,10 @@ O professor da cadeira disponibilizou alguns artigos relacionados ao uso de inte
 ## Organização de Diretórios/Arquivos
 
 O diretório:
- - `Artigos` contém o artigo do repositório base e o artigo feito por nossa equipe.
- - `Models` contém os modelos do repositório base, e dentro da pasta `melhorado` estão os modelos feitos pela nossa equipe.
- - `Repositório Base` contém o repositório base do artigo escolhido pela nossa equipe.
- - `data` contém os arquivos de conjunto de dados usados.
+ - `Artigos` contém o [artigo do repositório base](https://ieeexplore.ieee.org/document/10077796) e o artigo feito por nossa equipe.
+ - `Models` contém os modelos do [repositório base](https://gitlab.ilabt.imec.be/mverkerk/multi-stage-hierarchical-ids), e dentro da pasta `melhorado` estão os modelos feitos pela nossa equipe.
+ - `Repositório Base` contém o [repositório base](https://gitlab.ilabt.imec.be/mverkerk/multi-stage-hierarchical-ids) do artigo escolhido pela nossa equipe.
+ - `data` contém os arquivos de [conjunto de dados](https://www.unb.ca/cic/datasets/) usados.
  - `utils` contém alguns arquivos [python](https://www.python.org) com funções que auxiliam os arquivos principais.
  - `1º_Estágio(reprodução).ipynb` é o treino, validação e salvamento do modelo na reprodução do primeiro estágio.
  - `1º_Estágio(melhorado).ipynb` é o treino, validação e salvamento do modelo na melhora do primeiro estágio.
@@ -32,13 +32,13 @@ Para obter o arquivo do conjunto de dados `cic_ids_2017`, pelo fato do arquivo s
 Nossa equipe conseguiu uma melhora considerável no tempo de execução do sistema hierárquico, mantendo os resultados bem similares aos resultados do artigo original:
 
 ### Resultado do artigo original:
-![Imagem do WhatsApp de 2024-03-11 à(s) 21 19 15_396c5c5c](https://github.com/luiz-linkezio/Deteccao_de_Intrusao_Hierarquica_Multiestagio/assets/125787137/4c17f40c-60aa-4cb0-a567-38e5e62f49ea)
-![Imagem do WhatsApp de 2024-03-11 à(s) 21 19 24_ddeec412](https://github.com/luiz-linkezio/Deteccao_de_Intrusao_Hierarquica_Multiestagio/assets/125787137/98dcf131-1e44-4ab3-8472-c1be621f8639)
+![Results_Original_Pred](https://github.com/luiz-linkezio/Deteccao_de_Intrusao_Hierarquica_Multiestagio/assets/125787137/4c17f40c-60aa-4cb0-a567-38e5e62f49ea)
+![Results_Original_Time](https://github.com/luiz-linkezio/Deteccao_de_Intrusao_Hierarquica_Multiestagio/assets/125787137/98dcf131-1e44-4ab3-8472-c1be621f8639)
 
 
 ### Resultado da melhora realizada pela nossa equipe:
-![Imagem do WhatsApp de 2024-03-11 à(s) 21 19 38_fadcc23e](https://github.com/luiz-linkezio/Deteccao_de_Intrusao_Hierarquica_Multiestagio/assets/125787137/1793fad0-ffdc-49da-a97c-06bc24590e24)
-![Imagem do WhatsApp de 2024-03-11 à(s) 21 20 01_eccfba28](https://github.com/luiz-linkezio/Deteccao_de_Intrusao_Hierarquica_Multiestagio/assets/125787137/4a2e24dc-5ff0-41ad-9d49-d8177cb6814e)
+![Results_Improve_Pred](https://github.com/luiz-linkezio/Deteccao_de_Intrusao_Hierarquica_Multiestagio/assets/125787137/1793fad0-ffdc-49da-a97c-06bc24590e24)
+![Results_Improve_Time](https://github.com/luiz-linkezio/Deteccao_de_Intrusao_Hierarquica_Multiestagio/assets/125787137/4a2e24dc-5ff0-41ad-9d49-d8177cb6814e)
 
 
 ## Links
