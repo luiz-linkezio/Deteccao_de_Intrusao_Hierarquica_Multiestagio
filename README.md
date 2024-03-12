@@ -7,10 +7,9 @@ O professor da cadeira disponibilizou alguns artigos relacionados ao uso de inte
 ## Organização de Diretórios/Arquivos
 
 O diretório:
-
  - `Artigos` contém o artigo do repositório base e o artigo feito por nossa equipe.
  - `Models` contém os modelos do repositório base, e dentro da pasta `melhorado` estão os modelos feitos pela nossa equipe.
- - `Repositório Base` contém o repositório base do artigo escolhido.
+ - `Repositório Base` contém o repositório base do artigo escolhido pela nossa equipe.
  - `data` contém os arquivos de conjunto de dados usados.
  - `utils` contém alguns arquivos [python](https://www.python.org) com funções que auxiliam os arquivos principais.
  - `1º_Estágio(reprodução).ipynb` é o treino, validação e salvamento do modelo na reprodução do primeiro estágio.
@@ -20,8 +19,28 @@ O diretório:
  - `Especificação_do_seminário_e_do_projeto.pdf` é o arquivo que descreve as especificações do projeto.
  - `Tratamento_de_dados(reprodução).ipynb` é o tratamento de dados da reprodução.
  - `Tratamento_de_dados(melhorado).ipynb` é o tratamendo de dados da melhora.
+ - `SistemaHierarquico(reprodução).ipynb` é a reprodução do sistema escolhido pela nossa equipe.
+ - `SistemaHierarquico(melhorado).ipynb` é a melhora no sistema do artigo escolhido pela nossa equipe.
+
+## Resultados
+
+Nossa equipe conseguiu uma melhora considerável no tempo de execução do sistema hierárquico, mantendo os resultados bem similares aos resultados do artigo original:
+
+### Resultado do artigo original:
+![Imagem do WhatsApp de 2024-03-11 à(s) 21 19 15_396c5c5c](https://github.com/luiz-linkezio/Deteccao_de_Intrusao_Hierarquica_Multiestagio/assets/125787137/4c17f40c-60aa-4cb0-a567-38e5e62f49ea)
+![Imagem do WhatsApp de 2024-03-11 à(s) 21 19 24_ddeec412](https://github.com/luiz-linkezio/Deteccao_de_Intrusao_Hierarquica_Multiestagio/assets/125787137/98dcf131-1e44-4ab3-8472-c1be621f8639)
+
+
+### Resultado da melhora realizada pela nossa equipe:
+![Imagem do WhatsApp de 2024-03-11 à(s) 21 19 38_fadcc23e](https://github.com/luiz-linkezio/Deteccao_de_Intrusao_Hierarquica_Multiestagio/assets/125787137/1793fad0-ffdc-49da-a97c-06bc24590e24)
+![Imagem do WhatsApp de 2024-03-11 à(s) 21 20 01_eccfba28](https://github.com/luiz-linkezio/Deteccao_de_Intrusao_Hierarquica_Multiestagio/assets/125787137/4a2e24dc-5ff0-41ad-9d49-d8177cb6814e)
+
 
 ## Links
+
+Repositório Base: https://gitlab.ilabt.imec.be/mverkerk/multi-stage-hierarchical-ids
+
+Artigo escolhido: https://ieeexplore.ieee.org/document/10077796
 
 Python: https://www.python.org
 
@@ -35,5 +54,5 @@ Universidade Federal de Pernambuco (UFPE): https://www.ufpe.br
 
 ## Autores
 
-| [<img src="https://github.com/luiz-linkezio.png" width=115><br><sub>Luiz Henrique</sub><br>](https://github.com/luiz-linkezio) <sub>Desenvolvedor</sub><br> <sub>[Linkedin](https://www.linkedin.com/in/lhbas/)</sub> | [<img src="https://github.com/Raafm.png" width=115><br><sub>Rodrigo Abreu</sub><br>](https://github.com/Raafm) <sub>Desenvolvedor</sub><br> <sub>[Linkedin](https://www.linkedin.com/in/rodrigo-abreu-/)</sub> | [<img src="https://github.com/Rayhene.png" width=115><br><sub>Rayhene Ranúzia</sub><br>](https://github.com/Rayhene) <sub>Desenvolvedor</sub><br> <sub>[Linkedin](https://www.linkedin.com/in/rayhene/)</sub> |
+| [<img src="https://github.com/luiz-linkezio.png" width=115><br><sub>Luiz Henrique</sub><br>](https://github.com/luiz-linkezio) <sub>[Linkedin](https://www.linkedin.com/in/lhbas/)</sub> | [<img src="https://github.com/Raafm.png" width=115><br><sub>Rodrigo Abreu</sub><br>](https://github.com/Raafm) <sub>[Linkedin](https://www.linkedin.com/in/rodrigo-abreu-/)</sub> | [<img src="https://github.com/Rayhene.png" width=115><br><sub>Rayhene Ranúzia</sub><br>](https://github.com/Rayhene) <sub>[Linkedin](https://www.linkedin.com/in/rayhene/)</sub> |
 | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
