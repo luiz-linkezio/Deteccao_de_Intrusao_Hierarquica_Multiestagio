@@ -1,6 +1,6 @@
 # Multi-Stage Hierarchical Intrusion Detection
 
-Project for the Intrusion Detection course of the [Computer Engineering](https://portal.cin.ufpe.br/graduacao/#engenharia-da-computacao) program at [Centro de Informática (CIn)](https://portal.cin.ufpe.br/) of [Universidade Federal de Pernambuco (UFPE)](https://www.ufpe.br/), undertaken by the team from 2023 to 2024.
+Project for the Intrusion Detection course of the [Computer Engineering](https://portal.cin.ufpe.br/graduacao/#engenharia-da-computacao) undergraduation at [Centro de Informática (CIn)](https://portal.cin.ufpe.br/) of [Universidade Federal de Pernambuco (UFPE)](https://www.ufpe.br/), undertaken by the team from 2023 to 2024.
 
 The course instructor provided some articles related to the use of artificial intelligence for security or security for AI-based systems. The students were divided into groups, and each group had to choose an article or propose to the instructor the selection of an article from outside those provided. After selecting the article, the group had to present a seminar on the article, replicate the article's experiment on the same dataset and also on another dataset. Additionally, the group could also attempt to make improvements to the article's system, and if successful, could create a paper and give a presentation demonstrating the improvement. For more information on the rules and requirements, please refer to the contents of the file `Seminar_and_Project_Specification.pdf` in the `Docs` directory.
 
