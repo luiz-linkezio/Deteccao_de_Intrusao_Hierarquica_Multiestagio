@@ -27,7 +27,7 @@ O diretório:
 
 Para obter o arquivo do conjunto de dados `cic_ids_2017`, pelo fato do arquivo ser muito grande, será necessário o uso do [Git Large File Storage (LFS)](https://git-lfs.com), que é uma extensão do [Git](https://git-scm.com) que facilita o gerenciamento de arquivos grandes em repositórios [Git](https://git-scm.com), ele permite armazenar arquivos grandes fora do repositório principal do [Git](https://git-scm.com), reduzindo assim o tamanho do repositório e melhorando a eficiência do versionamento. Para utilizar esta ferramenta, siga os seguintes passos:
 - Baixe e instale o Git LFS através deste link: https://git-lfs.com
-- Clone o repositório com o comando: `git clone git@github.com:luiz-linkezio/Deteccao_de_Intrusao_Hierarquica_Multiestagio.git`
+- Clone o repositório com o comando (caso ainda não tenha clonado): `git clone git@github.com:luiz-linkezio/Deteccao_de_Intrusao_Hierarquica_Multiestagio.git`
 - Use o comando: `git lfs pull`
 
 ## Como executar o projeto
