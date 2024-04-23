@@ -24,6 +24,7 @@ The directory:
  - `Docs\Seminário - Melhoria do sistema.pdf` is the presentation of the system improvement, which was presented in class.
  - `Docs\Artigos\A_Novel_Multi-Stage_Approach_for_Hierarchical_Intrusion_Detection.pdf` is the article chosen by the team.
  - `Docs\Artigos\Uma Abordagem em Múltiplos Estágios para Detecção Hierárquica.docx.pdf` is the article produced by the team, also considered as a project report in general.
+ - `requirements.txt` is a text file with the external libraries and their versions, required for the execution and/or reproduction of the project.
 
 To obtain the `cic_ids_2017` dataset file, due to its large size, it is necessary to use [Git Large File Storage (LFS)](https://git-lfs.com), an extension of [Git](https://git-scm.com) that facilitates the management of large files in [Git](https://git-scm.com) repositories, allowing storing large files outside the main [Git](https://git-scm.com) repository, thus reducing the repository size and improving versioning efficiency. To use this tool, follow these steps:
 - Download and install Git LFS from this link: https://git-lfs.com

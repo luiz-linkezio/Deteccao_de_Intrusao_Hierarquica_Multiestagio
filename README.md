@@ -24,6 +24,7 @@ O diretório:
  - `Docs\Seminário - Melhoria do sistema.pdf` é a apresentação da melhoria do sistema, apresentação esta que foi feita em sala de aula.
  - `Docs\Artigos\A_Novel_Multi-Stage_Approach_for_Hierarchical_Intrusion_Detection.pdf` é o artigo escolhido pela equipe.
  - `Docs\Artigos\Uma Abordagem em Múltiplos Estágios para Detecção Hierárquica.docx.pdf` é o artigo feito pela equipe, que também é considerado como relatório do projeto de forma geral.
+ - `requirements.txt` é um arquivo de texto com as bibliotecas externas e suas versões, requeridas para a realização e/ou reprodução do projeto.
 
 Para obter o arquivo do conjunto de dados `cic_ids_2017`, pelo fato do arquivo ser muito grande, será necessário o uso do [Git Large File Storage (LFS)](https://git-lfs.com), que é uma extensão do [Git](https://git-scm.com) que facilita o gerenciamento de arquivos grandes em repositórios [Git](https://git-scm.com), ele permite armazenar arquivos grandes fora do repositório principal do [Git](https://git-scm.com), reduzindo assim o tamanho do repositório e melhorando a eficiência do versionamento. Para utilizar esta ferramenta, siga os seguintes passos:
 - Baixe e instale o Git LFS através deste link: https://git-lfs.com
