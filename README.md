@@ -26,25 +26,6 @@ O diretório:
  - `docs\Artigos\Uma Abordagem em Múltiplos Estágios para Detecção Hierárquica.docx.pdf` é o artigo feito pela equipe, que também é considerado como relatório do projeto de forma geral.
  - `requirements.txt` é um arquivo de texto com as bibliotecas externas e suas versões, requeridas para a realização e/ou reprodução do projeto.
 
-Para obter o arquivo do conjunto de dados `cic_ids_2017`, pelo fato do arquivo ser muito grande, será necessário o uso do [Git Large File Storage (LFS)](https://git-lfs.com), que é uma extensão do [Git](https://git-scm.com) que facilita o gerenciamento de arquivos grandes em repositórios [Git](https://git-scm.com), ele permite armazenar arquivos grandes fora do repositório principal do [Git](https://git-scm.com), reduzindo assim o tamanho do repositório e melhorando a eficiência do versionamento. Para utilizar esta ferramenta, siga os seguintes passos:
-- Baixe e instale o Git LFS através deste link: https://git-lfs.com
-- Clone o repositório com o comando (caso ainda não tenha clonado): `git clone git@github.com:luiz-linkezio/Deteccao_de_Intrusao_Hierarquica_Multiestagio.git`
-- Use o comando: `git lfs pull`
-
-## Como executar o projeto
-
-Para executar a reprodução do repositório base, siga os seguintes passos:
-- Rode o código do arquivo `Tratamento_de_dados.ipynb`.
-- Rode o código do arquivo `1º_Estágio(reprodução).ipynb`.
-- Rode o código do arquivo `2º_Estágio(reprodução).ipynb`.
-- Rode o código do arquivo `SistemaHierarquico(reprodução).ipynb`.
-
-Para executar a melhora do experimento de reprodução do repositório base, siga os seguintes passos:
-- Rode o código do arquivo `Tratamento_de_dados.ipynb`.
-- Rode o código do arquivo `1º_Estágio(melhorado).ipynb`.
-- Rode o código do arquivo `2º_Estágio(melhorado).ipynb`.
-- Rode o código do arquivo `SistemaHierarquico(melhorado).ipynb`.
-
 ## Resultados
 
 Nossa equipe conseguiu uma melhora considerável no tempo de execução do sistema hierárquico, mantendo os resultados bem similares aos resultados do artigo original:
