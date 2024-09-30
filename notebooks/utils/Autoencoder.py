@@ -12,7 +12,7 @@ import pickle
 try:
     from best_threshold import binary_distribution_threshold_max_acc, binary_distribution_threshold_recall_search
 except ImportError:
-    from Models.melhorado.best_threshold import binary_distribution_threshold_max_acc, binary_distribution_threshold_recall_search
+    from .best_threshold import binary_distribution_threshold_max_acc, binary_distribution_threshold_recall_search
     
     # Implementação do Early Stopping
 class EarlyStopping:

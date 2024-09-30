@@ -3,7 +3,7 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report
 from sklearn.datasets import load_digits
-from utils.best_threshold import binary_distribution_threshold_search
+from utils.best_threshold import binary_distribution_threshold_recall_search
 import time
 class FirstStage:
     def __init__(self,anomaly_detector,threshold_b= None, ys= None):
@@ -15,7 +15,7 @@ class FirstStage:
         if threshold_b is not None:
             self.tb = threshold_b
         elif ys is not None:
-            self.tb = binary_distribution_threshold_search(ys[0],ys[1])
+            self.tb = binary_distribution_threshold_recall_search(ys[0],ys[1])
         else:
             ValueError("ys and threshold_b cannot be both None")
 
@@ -33,7 +33,7 @@ class FirstStage:
         assert (y_pred is not None) or (X is not None)
         if X is not None:
             y_pred_proba = self.detect_anomaly_proba(X)
-        t = binary_distribution_threshold_search(y_true, y_pred_proba)
+        t = binary_distribution_threshold_recall_search(y_true, y_pred_proba)
         if set_threshold:
             self.tb = t
         return t

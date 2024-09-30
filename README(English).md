@@ -8,22 +8,22 @@ The course instructor provided some articles related to the use of artificial in
 
 The directory:
  - `Artigos` contains the [base repository article](https://ieeexplore.ieee.org/document/10077796) and the article produced by our team.
- - `Models` contains, in the `reproduction` folder, the models from the [base repository](https://gitlab.ilabt.imec.be/mverkerk/multi-stage-hierarchical-ids), and within the `melhorado` folder are the models made by our team to improve the system.
+ - `models` contains, in the `reproduction` folder, the models from the [base repository](https://gitlab.ilabt.imec.be/mverkerk/multi-stage-hierarchical-ids), and within the `melhorado` folder are the models made by our team to improve the system.
  - `Repositório_Base` contains the [base repository](https://gitlab.ilabt.imec.be/mverkerk/multi-stage-hierarchical-ids) of the article chosen by our team.
  - `data` contains the [dataset files](https://www.unb.ca/cic/datasets/) used.
- - `utils` contains some [Python](https://www.python.org) files with functions that assist the main files.
- - `1º_Estágio(reprodução).ipynb` is the code for training, validating, and saving the model in the reproduction of the first stage.
- - `1º_Estágio(melhorado).ipynb` is the code for training, validating, and saving the model in the enhancement of the first stage.
- - `2º_Estágio(reprodução).ipynb` is the code for training, validating, and saving the model in the reproduction of the second stage.
- - `2º_Estágio(melhorado).ipynb` is the code for training, validating, and saving the model in the enhancement of the second stage.
- - `Tratamento_de_dados.ipynb` is the data preprocessing code.
- - `SistemaHierarquico(reprodução).ipynb` is the code for reproducing the system from the article chosen by our team.
- - `SistemaHierarquico(melhorado).ipynb` is the code for improving the system from the article chosen by our team.
- - `Docs\Especificação_do_seminário_e_do_projeto.pdf` is the file describing the project specifications.
- - `Docs\Seminário - Apresentação do artigo escolhido.pptx` is the presentation of the chosen article, which was presented in class.
- - `Docs\Seminário - Melhoria do sistema.pdf` is the presentation of the system improvement, which was presented in class.
- - `Docs\Artigos\A_Novel_Multi-Stage_Approach_for_Hierarchical_Intrusion_Detection.pdf` is the article chosen by the team.
- - `Docs\Artigos\Uma Abordagem em Múltiplos Estágios para Detecção Hierárquica.docx.pdf` is the article produced by the team, also considered as a project report in general.
+ - `utils` contains some [Python](https://www.python.org) files with functions that assist other files.
+ - `notebooks/1º_Estágio(reprodução).ipynb` is the code for training, validating, and saving the model in the reproduction of the first stage.
+ - `notebooks/1º_Estágio(melhorado).ipynb` is the code for training, validating, and saving the model in the enhancement of the first stage.
+ - `notebooks/2º_Estágio(reprodução).ipynb` is the code for training, validating, and saving the model in the reproduction of the second stage.
+ - `notebooks/2º_Estágio(melhorado).ipynb` is the code for training, validating, and saving the model in the enhancement of the second stage.
+ - `notebooks/Tratamento_de_dados.ipynb` is the data preprocessing code.
+ - `notebooks/SistemaHierarquico(reprodução).ipynb` is the code for reproducing the system from the article chosen by our team.
+ - `notebooks/SistemaHierarquico(melhorado).ipynb` is the code for improving the system from the article chosen by our team.
+ - `docs\Especificação_do_seminário_e_do_projeto.pdf` is the file describing the project specifications.
+ - `docs\Seminário - Apresentação do artigo escolhido.pptx` is the presentation of the chosen article, which was presented in class.
+ - `docs\Seminário - Melhoria do sistema.pdf` is the presentation of the system improvement, which was presented in class.
+ - `docs\Artigos\A_Novel_Multi-Stage_Approach_for_Hierarchical_Intrusion_Detection.pdf` is the article chosen by the team.
+ - `docs\Artigos\Uma Abordagem em Múltiplos Estágios para Detecção Hierárquica.docx.pdf` is the article produced by the team, also considered as a project report in general.
  - `requirements.txt` is a text file with the external libraries and their versions, required for the execution and/or reproduction of the project.
 
 To obtain the `cic_ids_2017` dataset file, due to its large size, it is necessary to use [Git Large File Storage (LFS)](https://git-lfs.com), an extension of [Git](https://git-scm.com) that facilitates the management of large files in [Git](https://git-scm.com) repositories, allowing storing large files outside the main [Git](https://git-scm.com) repository, thus reducing the repository size and improving versioning efficiency. To use this tool, follow these steps:
