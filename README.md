@@ -11,7 +11,7 @@ O diretório:
  - `models` contém na pasta `reprodução` os modelos do [repositório base](https://gitlab.ilabt.imec.be/mverkerk/multi-stage-hierarchical-ids), e dentro da pasta `melhorado` estão os modelos feitos pela nossa equipe para a melhoria do sistema.
  - `Repositório Base` contém o [repositório base](https://gitlab.ilabt.imec.be/mverkerk/multi-stage-hierarchical-ids) do artigo escolhido pela nossa equipe.
  - `data` contém os arquivos de [conjunto de dados](https://www.unb.ca/cic/datasets/) usados.
- - `utils` contém alguns arquivos [python](https://www.python.org) com funções que auxiliam outros arquivos.
+ - `notebooks/utils` contém alguns arquivos [python](https://www.python.org) com funções que auxiliam outros arquivos.
  - `notebooks/1º_Estágio(reprodução).ipynb` é o código de treino, validação e salvamento do modelo na reprodução do primeiro estágio.
  - `notebooks/1º_Estágio(melhorado).ipynb` é o código de treino, validação e salvamento do modelo na melhora do primeiro estágio.
  - `notebooks/2º_Estágio(reprodução).ipynb` é o código de treino, validação e salvamento do modelo na reprodução do segundo estágio.
