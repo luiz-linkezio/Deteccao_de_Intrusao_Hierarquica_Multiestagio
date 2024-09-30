@@ -39,29 +39,6 @@ Nossa equipe conseguiu uma melhora considerável no tempo de execução do siste
 ![Results_Improve_Pred](https://github.com/luiz-linkezio/Deteccao_de_Intrusao_Hierarquica_Multiestagio/assets/125787137/1793fad0-ffdc-49da-a97c-06bc24590e24)
 ![Results_Improve_Time](https://github.com/luiz-linkezio/Deteccao_de_Intrusao_Hierarquica_Multiestagio/assets/125787137/4a2e24dc-5ff0-41ad-9d49-d8177cb6814e)
 
-
-## Links
-
-Conjunto de dados: https://www.unb.ca/cic/datasets/
-
-Repositório Base: https://gitlab.ilabt.imec.be/mverkerk/multi-stage-hierarchical-ids
-
-Artigo escolhido: https://ieeexplore.ieee.org/document/10077796
-
-Git: https://git-scm.com
-
-Git Large File Storage (LFS): https://git-lfs.com
-
-Python: https://www.python.org
-
-Jupyter Notebook: https://jupyter.org
-
-Centro de Informática (CIn): https://portal.cin.ufpe.br/
-
-Site da graduação em Engenharia da Computação (EC): https://portal.cin.ufpe.br/graduacao/#engenharia-da-computacao
-
-Universidade Federal de Pernambuco (UFPE): https://www.ufpe.br
-
 ## Autores
 
 | [<img src="https://github.com/luiz-linkezio.png" width=115><br><sub>Luiz Henrique</sub><br>](https://github.com/luiz-linkezio) <sub>[Linkedin](https://www.linkedin.com/in/lhbas/)</sub> | [<img src="https://github.com/Raafm.png" width=115><br><sub>Rodrigo Abreu</sub><br>](https://github.com/Raafm) <sub>[Linkedin](https://www.linkedin.com/in/rodrigo-abreu-/)</sub> | [<img src="https://github.com/Rayhene.png" width=115><br><sub>Rayhene Ranúzia</sub><br>](https://github.com/Rayhene) <sub>[Linkedin](https://www.linkedin.com/in/rayhene/)</sub> |
